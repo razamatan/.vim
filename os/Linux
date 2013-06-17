@@ -1,0 +1,8 @@
+" overrides for linux
+
+"hi Comment ctermfg=blue
+
+let g:Tex_ViewRule_pdf = 'xdg-open'
+let g:Tex_ViewRule_dvi = 'xdg-open'
+
+" vim: set ft=vim :

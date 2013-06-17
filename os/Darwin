@@ -1,0 +1,6 @@
+" overrides for a mac
+
+let g:Tex_ViewRule_pdf = 'open'
+let g:Tex_ViewRule_dvi = 'open'
+
+" vim: set ft=vim :

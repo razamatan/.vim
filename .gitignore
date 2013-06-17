@@ -1,0 +1,6 @@
+*.pyc
+.netrwhist
+bundle/
+eclim/
+plugin/eclim.vim
+ycm_build/*
