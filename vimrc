@@ -28,7 +28,7 @@ set modeline
 set modelines=5
 
 " completion
-if exists(':YcmDebugInfo')
+if exists('g:loaded_youcompleteme')
    let g:EclimCompletionMethod = 'omnifunc'
    let g:ycm_autoclose_preview_window_after_insertion = 1
 endif
