@@ -28,10 +28,14 @@ set modeline
 set modelines=5
 
 " completion
-"set completeopt=menuone,longest
-"let g:SuperTabDefaultCompletionType = 'context'
-let g:EclimCompletionMethod = 'omnifunc'
-let g:ycm_autoclose_preview_window_after_insertion = 1
+if exists(':YcmDebugInfo')
+   let g:EclimCompletionMethod = 'omnifunc'
+   let g:ycm_autoclose_preview_window_after_insertion = 1
+endif
+if exists('loaded_supertab')
+   set completeopt=menuone,longest
+   let g:SuperTabDefaultCompletionType = 'context'
+endif
 
 set shell=/bin/bash
 set grepprg=grep\ -nH\ $*

@@ -42,9 +42,12 @@ Bundle 'vim-scripts/LaTeX-Suite-aka-Vim-LaTeX'
 " lisp
 Bundle 'vim-scripts/slimv.vim'
 " completion
-"Bundle 'ervandew/supertab'
-"Bundle 'vim-scripts/cscope_macros.vim'
-Bundle 'Valloric/YouCompleteMe'
+if $THIS_DOMAIN == 'mac'
+   Bundle 'ervandew/supertab'
+   "Bundle 'vim-scripts/cscope_macros.vim'
+else
+   Bundle 'Valloric/YouCompleteMe'
+endif
 
 filetype plugin on      " for the filetype plugin
 filetype indent on      " and indenting is sometimes good
