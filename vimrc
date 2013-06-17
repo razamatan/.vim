@@ -1,5 +1,5 @@
 " the leader character is \
-source bundles.vim
+source ~/.vim/bundles.vim
 
 syntax on               " pretty colors
 
