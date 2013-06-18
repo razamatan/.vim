@@ -28,11 +28,11 @@ set modeline
 set modelines=5
 
 " completion
-if exists('g:loaded_youcompleteme')
+if filereadable(expand('~/.vim/bundle/YouCompleteMe/python/ycm_core.so'))
    let g:EclimCompletionMethod = 'omnifunc'
    let g:ycm_autoclose_preview_window_after_insertion = 1
 endif
-if exists('loaded_supertab')
+if filereadable(expand('~/.vim/bundle/supertab/plugin/supertab.vim'))
    set completeopt=menuone,longest
    let g:SuperTabDefaultCompletionType = 'context'
 endif
@@ -117,7 +117,7 @@ endfunction
 au Filetype mail set tw=0
 
 " plugin related
-let python_highlight_all = 1
+let python_highlight_all=1
 let bexec_rehighlight=1
 
 " latex stuff

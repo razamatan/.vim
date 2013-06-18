@@ -1,4 +1,4 @@
-if exists(":VCSCommandGetOption")
+if filereadable(expand("~/.vim/bundle/vcscommand/plugin/vcsgit.vim"))
    function! s:CreateVCSMapping(shortcut, expansion, display)
       let lhs = VCSCommandGetOption('VCSCommandMapPrefix', '<Leader>c') . a:shortcut
       if !hasmapto(a:expansion)
