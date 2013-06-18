@@ -1,5 +1,5 @@
 # run this
-cmake -G "Unix Makefiles" ../bundle/YouCompleteMe /usr/local/google/home/jinyi/.vim/bundle/YouCompleteMe/cpp
+cmake -G "Unix Makefiles" ../bundle/YouCompleteMe ~/.vim/bundle/YouCompleteMe/cpp
 
 # or this
 cmake -G "Unix Makefiles" -DPATH_TO_LLVM_ROOT=path/to/llvm_root_dir/for/libclang . ~/.vim/bundle/YouCompleteMe/cpp
