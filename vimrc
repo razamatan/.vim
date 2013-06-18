@@ -147,7 +147,7 @@ if filereadable(osvimrc)
 endif
 
 " host based overrides
-if filereadable( expand("~/.dotfile.$THIS_DOMAIN/vimrc") )
+if filereadable( expand("~/.dotfiles.$THIS_DOMAIN/vimrc") )
    source ~/.dotfiles.$THIS_DOMAIN/vimrc
 endif
 if filereadable( expand("~/.vim/host/$THIS_DOMAIN") )
