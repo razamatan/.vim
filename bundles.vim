@@ -42,11 +42,11 @@ Bundle 'vim-scripts/LaTeX-Suite-aka-Vim-LaTeX'
 " lisp
 Bundle 'vim-scripts/slimv.vim'
 " completion
-if $THIS_DOMAIN == 'mac'
+if has('patch584')
+   Bundle 'Valloric/YouCompleteMe'
+else
    Bundle 'ervandew/supertab'
    "Bundle 'vim-scripts/cscope_macros.vim'
-else
-   Bundle 'Valloric/YouCompleteMe'
 endif
 
 filetype plugin on      " for the filetype plugin
