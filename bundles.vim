@@ -43,7 +43,7 @@ Bundle 'vim-scripts/LaTeX-Suite-aka-Vim-LaTeX'
 Bundle 'vim-scripts/slimv.vim'
 " completion
 if has('patch584')
-   Bundle 'Valloric/YouCompleteMe'
+   " Bundle 'Valloric/YouCompleteMe'
 else
    Bundle 'ervandew/supertab'
    "Bundle 'vim-scripts/cscope_macros.vim'
