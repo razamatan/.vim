@@ -28,7 +28,7 @@ set modeline
 set modelines=5
 
 " completion
-if filereadable(expand('~/.vim/bundle/YouCompleteMe/python/ycm_core.so'))
+if has('patch584')  " we're more than likely using ycm
    let g:EclimCompletionMethod = 'omnifunc'
    let g:ycm_autoclose_preview_window_after_insertion = 1
 endif
