@@ -26,7 +26,7 @@ Bundle 'vim-scripts/Bexec'
 " align statements
 Bundle 'vim-scripts/Align'
 " alternate .h/.c
-Bundle 'vim-scripts/a.vim'
+Bundle 'derekwyatt/vim-fswitch'
 " most recently used files
 Bundle 'vim-scripts/mru.vim'
 " vcs integration
