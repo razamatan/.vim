@@ -56,15 +56,25 @@ colorscheme solarized
 "hi StatusLineNC cterm=reverse ctermfg=DarkGrey
 "hi Search ctermfg=White ctermbg=DarkBlue
 
+" In normal mode, we use : much more often than ; so lets swap them.
+" WARNING: this will cause any "ordinary" map command without the "nore" prefix
+" that uses ":" to fail. For instance, "map <f2> :w" would fail, since vim will
+" read ":w" as ";w" because of the below remappings. Use "noremap"s in such
+" situations and you'll be fine.
+nnoremap ; :
+nnoremap : ;
+vnoremap ; :
+vnoremap : ;
+
 " window movement
-nmap <C-Up> :wincmd k<CR>
-nmap <C-Down> :wincmd j<CR>
-nmap <C-Right> :wincmd l<CR>
-nmap <C-Left> :wincmd h<CR>
+nnoremap <C-Up> :wincmd k<CR>
+nnoremap <C-Down> :wincmd j<CR>
+nnoremap <C-Right> :wincmd l<CR>
+nnoremap <C-Left> :wincmd h<CR>
 
 " buffer movement
-nmap <C-P> :bp<CR>
-nmap <C-N> :bn<CR>
+nnoremap <C-P> :bp<CR>
+nnoremap <C-N> :bn<CR>
 
 " line indenting
 set cinkeys-=0#         " prevent # from autoflushing left
@@ -78,24 +88,24 @@ map -- gg=G''
 
 " function keys
 " <F5> buffer selection (switch)
-nmap <F5> :ls<CR>:e #
+nnoremap <F5> :ls<CR>:e #
 " <F8> spellchecking
 if has("spell")
    set spelllang=en_us
-   nmap <F8> :set spell!<CR><Bar>:echo "Spell Check: " . strpart("OffOn", 3 * &spell, 3)<CR>
+   nnoremap <F8> :set spell!<CR><Bar>:echo "Spell Check: " . strpart("OffOn", 3 * &spell, 3)<CR>
 else
-   nmap <F8> <Bar>:echo "Spell Check Unavailable"<CR>
+   nnoremap <F8> <Bar>:echo "Spell Check Unavailable"<CR>
 endif
 " <F9> pastetoggle
 set pastetoggle=<F9>
 " <F12> gqap (cluster & autowrap)
-nmap <F12> gqap
+nnoremap <F12> gqap
 
 " macros
 nnoremap <silent> <Leader>ml :call AppendModeline()<CR>
-nmap <Leader>date :r!date<CR>
-nmap <Leader>tag  :!tagup<CR>
-nmap <Leader>make :w<CR>:!makeup<CR>
+nnoremap <Leader>date :r!date<CR>
+nnoremap <Leader>tag  :!tagup<CR>
+nnoremap <Leader>make :w<CR>:!makeup<CR>
 
 " functions
 function! AppendModeline()
@@ -134,10 +144,10 @@ au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$") | exe "normal g'
 
 " vimdiff
 if &diff
-   nmap <C-P> [cz.
-   nmap <C-N> ]cz.
-   nmap <C-L>u :diffupdate<CR><C-L>
-   nmap Q :qa<CR>
+   nnoremap <C-P> [cz.
+   nnoremap <C-N> ]cz.
+   nnoremap <C-L>u :diffupdate<CR><C-L>
+   nnoremap Q :qa<CR>
 endif
 
 " platform specific overrides
