@@ -11,7 +11,7 @@ set list
 set listchars=tab:>-,trail:-
 
 set cpoptions+=$        " 'c' & 's' functionality
-set noautoindent                " but not too much...
+set noautoindent        " but not too much...
 set ruler               " see where i'm @
 set laststatus=2        " always show status line
 set scrolloff=3         " always show lines around cursor
@@ -26,6 +26,7 @@ set incsearch              " incremental search
 set ic scs                 " case-insentive, smart case search
 set modeline
 set modelines=5
+set nobackup
 
 " completion
 if has('patch584')  " we're more than likely using ycm
