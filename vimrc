@@ -89,7 +89,7 @@ map -- gg=G''
 
 " function keys
 " <F5> buffer selection (switch)
-nnoremap <F5> :ls<CR>:e #
+"nnoremap <F5> :ls<CR>:e #
 " <F8> spellchecking
 if has("spell")
    set spelllang=en_us

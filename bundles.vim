@@ -11,6 +11,8 @@ Bundle 'gmarik/vundle'
 Bundle 'altercation/vim-colors-solarized'
 " search and highlight multiple terms
 Bundle 'vim-scripts/multisearch.vim'
+" gundo (undo tree)
+Bundle 'sjl/gundo.vim'
 " more powerful . command
 Bundle 'tpope/vim-repeat'
 " more powerful % command
