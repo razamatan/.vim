@@ -86,6 +86,7 @@ nnoremap <S-Tab> <LT><LT>
 vnoremap <Tab> >
 vnoremap <S-Tab> <LT>
 map -- gg=G''
+nnoremap U :GundoToggle<CR>
 
 " function keys
 " <F5> buffer selection (switch)
