@@ -45,7 +45,7 @@ Bundle 'vim-scripts/LaTeX-Suite-aka-Vim-LaTeX'
 Bundle 'vim-scripts/slimv.vim'
 " completion
 if $THIS_DOMAIN != "google.com"
-  if has('patch584')
+  if has('python') && (v:version > 703 || (v:version == 703 && has('patch584')))
      Bundle 'Valloric/YouCompleteMe'
   else
      Bundle 'ervandew/supertab'
