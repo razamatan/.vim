@@ -7,17 +7,17 @@ set enc=utf-8           " utf-8
 set expandtab           " i don't like tabs
 set tabstop=3           " how to handle tabs
 set shiftwidth=3
-set list
-set listchars=tab:>-,trail:-
-
-set cpoptions+=$        " 'c' & 's' functionality
 set noautoindent        " but not too much...
+
 set ruler               " see where i'm @
 set laststatus=2        " always show status line
 set scrolloff=3         " always show lines around cursor
 set showcmd             " show what command i'm doing
+set list listchars=tab:»·,trail:·,nbsp:·
+
+set formatoptions+=j    " allow removal of comment chars on J
+set cpoptions+=$        " 'c' & 's' functionality
 set hidden              " no write on buffer switch
-set background=dark
 
 set wildmode=longest,full  " filename completion
 set wildmenu               " filename completion
@@ -48,6 +48,7 @@ let g:netrw_liststyle=3       " tree
 "let g:netrw_preview=1         " 0 horizontal split, 1 vertical split
 
 " colors
+set background=dark
 if $COLORTERM == "gnome-terminal"
    set t_Co=256
 endif
@@ -117,14 +118,6 @@ function! AppendModeline()
    $put =substitute(&commentstring, '%s', l:append, '')
    call setpos('.', l:save_cursor)
 endfunction
-
-function! SetTitle()
-   let l:title = 'vi: ' . expand('%:t')
-   let l:truncTitle = strpart(l:title, 0, 15)
-   silent exe '!echo -e -n "\033k' . l:truncTitle . '\033\\"'
-endfunction
-" Run it every time we change buffers
-"autocmd BufEnter * call SetTitle()
 
 " misc autocmds
 au Filetype mail set tw=0
