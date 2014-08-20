@@ -15,7 +15,9 @@ set scrolloff=3         " always show lines around cursor
 set showcmd             " show what command i'm doing
 set list listchars=tab:»·,trail:·,nbsp:·
 
-set formatoptions+=j    " allow removal of comment chars on J
+if (v:version > 703 || (v:version == 703 && has('patch541')))
+   set formatoptions+=j    " allow removal of comment chars on J
+endif
 set cpoptions+=$        " 'c' & 's' functionality
 set hidden              " no write on buffer switch
 
