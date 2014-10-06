@@ -43,6 +43,8 @@ Bundle 'fs111/pydoc.vim'
 Bundle 'vim-scripts/LaTeX-Suite-aka-Vim-LaTeX'
 " lisp
 Bundle 'vim-scripts/slimv.vim'
+" dart
+Bundle 'dart-lang/dart-vim-plugin'
 " completion
 if $THIS_DOMAIN != "google.com"
   if has('python') && (v:version > 703 || (v:version == 703 && has('patch584')))
