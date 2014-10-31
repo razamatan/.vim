@@ -1,5 +1,5 @@
 set makeprg=makeup
-au BufNewFile,BufRead *.m,*.mi,*.mhtml set filetype=mason
+"au BufNewFile,BufRead *.m,*.mi,*.mhtml set filetype=mason
 au FileType java set makeprg=antup
 au FileType java set efm=\ %#[javac]\ %#%f:%l:%c:%*\\d:%*\\d:\ %t%[%^:]%#:%m,\%A\ %#[javac]\ %f:%l:\ %m,%-Z\ %#[javac]\ %p^,%-C%.%#
  za, zc, zo; zm/zr
