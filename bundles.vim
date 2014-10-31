@@ -44,7 +44,7 @@ Bundle 'fs111/pydoc.vim'
 Bundle 'mitsuhiko/vim-jinja'
 
 " latex
-Bundle 'vim-scripts/LaTeX-Suite-aka-Vim-LaTeX'
+Bundle 'git://git.code.sf.net/p/vim-latex/vim-latex'
 " lisp
 Bundle 'vim-scripts/slimv.vim'
 " dart
