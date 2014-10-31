@@ -3,7 +3,7 @@ if filereadable(expand("~/.vim/bundle/vcscommand/plugin/vcsgit.vim"))
       let lhs = VCSCommandGetOption('VCSCommandMapPrefix', '<Leader>c') . a:shortcut
       if !hasmapto(a:expansion)
          try
-            execute 'nmap <silent> <unique>' lhs a:expansion
+            execute 'nnoremap <silent> <unique>' lhs a:expansion
          catch /^Vim(.*):E227:/
             if(&verbose != 0)
                echohl WarningMsg|echomsg 'VCSCommand:  mapping ''' . lhs . ''' already exists, refusing to overwrite.  The mapping for ' . a:display . ' will not be available.'|echohl None
