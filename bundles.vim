@@ -4,7 +4,7 @@ set nocompatible
 " vundle goodness
 filetype off
 set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+call vundle#begin()
 Bundle 'gmarik/vundle'
 
 " solarized color scheme
@@ -15,8 +15,12 @@ Bundle 'vim-scripts/multisearch.vim'
 Bundle 'sjl/gundo.vim'
 " most recently used files
 Bundle 'vim-scripts/mru.vim'
+" ctrl-p, fuzzy file open
+Bundle 'kien/ctrlp.vim'
 " vcs integration
 Bundle 'git://repo.or.cz/vcscommand.git'
+" auto ts and sw
+Bundle 'tpope/vim-sleuth'
 
 " more powerful . command
 Bundle 'tpope/vim-repeat'
@@ -49,18 +53,21 @@ Bundle 'git://git.code.sf.net/p/vim-latex/vim-latex'
 Bundle 'vim-scripts/slimv.vim'
 " dart
 Bundle 'dart-lang/dart-vim-plugin'
+" json
+Bundle 'elzr/vim-json'
 " alternate .h/.c
 Bundle 'derekwyatt/vim-fswitch'
 
 " completion
 if $THIS_DOMAIN != "google.com"
   if has('python') && (v:version > 703 || (v:version == 703 && has('patch584')))
-     Bundle 'Valloric/YouCompleteMe'
+    Bundle 'Valloric/YouCompleteMe'
   else
-     Bundle 'ervandew/supertab'
-     "Bundle 'vim-scripts/cscope_macros.vim'
+    Bundle 'ervandew/supertab'
+    "Bundle 'vim-scripts/cscope_macros.vim'
   endif
 endif
 
+call vundle#end()
 filetype plugin on      " for the filetype plugin
 filetype indent on      " and indenting is sometimes good
