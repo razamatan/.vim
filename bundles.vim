@@ -13,6 +13,8 @@ Bundle 'altercation/vim-colors-solarized'
 Bundle 'vim-scripts/multisearch.vim'
 " gundo (undo tree)
 Bundle 'sjl/gundo.vim'
+" recovery
+Bundle 'chrisbra/Recover.vim'
 " most recently used files
 Bundle 'vim-scripts/mru.vim'
 " ctrl-p, fuzzy file open
