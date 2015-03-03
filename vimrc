@@ -123,6 +123,8 @@ nnoremap U :GundoToggle<CR>
 nnoremap <Leader>of :FSHere<CR>
 nnoremap <Leader>oF :FSSplitRight<CR>
 let g:ctrlp_map = 'p'       " make ctrl-p alt-p
+let g:ctrlp_max_files = 0     " go big
+let g:ctrlp_max_depth = 40    " or go home
 let bexec_rehighlight=1
 let python_highlight_all=1
 let g:netrw_liststyle=3       " tree
