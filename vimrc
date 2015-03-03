@@ -33,7 +33,6 @@ set nobackup
 " completion
 if has('python') && (v:version > 703 || (v:version == 703 && has('patch584')))
   " we're more than likely using ycm
-  let g:EclimCompletionMethod = 'omnifunc'
   let g:ycm_autoclose_preview_window_after_insertion = 1
 endif
 if filereadable(expand('~/.vim/bundle/supertab/plugin/supertab.vim'))
