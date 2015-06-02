@@ -51,6 +51,8 @@ Bundle 'mitsuhiko/vim-jinja'
 
 " latex
 Bundle 'git://git.code.sf.net/p/vim-latex/vim-latex'
+" elixir
+Bundle 'elixir-lang/vim-elixir'
 " lisp
 Bundle 'vim-scripts/slimv.vim'
 " dart
