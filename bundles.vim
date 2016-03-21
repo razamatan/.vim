@@ -18,7 +18,7 @@ Bundle 'chrisbra/Recover.vim'
 " most recently used files
 Bundle 'vim-scripts/mru.vim'
 " ctrl-p, fuzzy file open
-Bundle 'kien/ctrlp.vim'
+Bundle 'ctrlpvim/ctrlp.vim'
 " vcs integration
 Bundle 'git://repo.or.cz/vcscommand.git'
 " auto ts and sw
