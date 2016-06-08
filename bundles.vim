@@ -50,7 +50,7 @@ Bundle 'fs111/pydoc.vim'
 Bundle 'mitsuhiko/vim-jinja'
 
 " latex
-Bundle 'git://git.code.sf.net/p/vim-latex/vim-latex'
+Bundle 'vim-latex/vim-latex'
 " elixir
 Bundle 'elixir-lang/vim-elixir'
 " lisp
