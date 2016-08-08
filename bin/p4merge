@@ -1,0 +1,3 @@
+#!/bin/sh
+# -d output -M local base other
+vimdiff -f -d $4 -M $3 $1 $2 -c "wincmd J" -c "set modifiable" -c "set write"
