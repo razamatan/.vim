@@ -31,6 +31,7 @@ set modelines=5
 set nobackup
 
 " completion
+set path+=**            " cheap way to use :find
 if has('python') && (v:version > 703 || (v:version == 703 && has('patch584')))
   " we're more than likely using ycm
   let g:ycm_autoclose_preview_window_after_insertion = 1
@@ -42,7 +43,6 @@ endif
 
 set shell=/bin/bash
 set grepprg=grep\ -nH\ $*
-set tags=tags;/
 
 " colors
 set background=dark
