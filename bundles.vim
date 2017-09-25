@@ -1,77 +1,71 @@
 " just want vim goodness
 set nocompatible
 
-" vundle goodness
-filetype off
-set rtp+=~/.vim/bundle/vundle/
-call vundle#begin()
-Bundle 'gmarik/vundle'
-
+" vim-plug goodness
+call plug#begin('~/.vim/bundle')
 " solarized color scheme
-Bundle 'altercation/vim-colors-solarized'
+Plug 'altercation/vim-colors-solarized'
 " search and highlight multiple terms
-Bundle 'vim-scripts/multisearch.vim'
+Plug 'vim-scripts/multisearch.vim'
 " gundo (undo tree)
-Bundle 'sjl/gundo.vim'
+Plug 'sjl/gundo.vim'
 " recovery
-Bundle 'chrisbra/Recover.vim'
+Plug 'chrisbra/Recover.vim'
 " most recently used files
-Bundle 'vim-scripts/mru.vim'
+Plug 'vim-scripts/mru.vim'
 " ctrl-p, fuzzy file open
-Bundle 'ctrlpvim/ctrlp.vim'
+Plug 'ctrlpvim/ctrlp.vim'
 " vcs integration
-Bundle 'git://repo.or.cz/vcscommand.git'
+Plug 'git://repo.or.cz/vcscommand.git'
 " auto ts and sw
-Bundle 'tpope/vim-sleuth'
+Plug 'tpope/vim-sleuth'
 
 " more powerful . command
-Bundle 'tpope/vim-repeat'
+Plug 'tpope/vim-repeat'
 " more powerful % command
-Bundle 'vim-scripts/matchit.zip'
+Plug 'vim-scripts/matchit.zip'
 " html/xml mappings, enhances vim-surround
-Bundle 'tpope/vim-ragtag'
+Plug 'tpope/vim-ragtag'
 " modify surrounding syntax
-Bundle 'tpope/vim-surround'
+Plug 'tpope/vim-surround'
 
 " check syntax of scripts
-Bundle 'vim-scripts/checksyntax-B'
+Plug 'vim-scripts/checksyntax-B'
 " buffer execution
-Bundle 'vim-scripts/Bexec'
+Plug 'vim-scripts/Bexec'
 " align statements
-Bundle 'vim-scripts/Align'
+Plug 'vim-scripts/Align'
 
 " enhanced python
-Bundle 'vim-scripts/python.vim--Vasiliev'
+Plug 'vim-scripts/python.vim--Vasiliev'
 " extend % for python
-Bundle 'vim-scripts/python_match.vim'
+Plug 'vim-scripts/python_match.vim'
 " pydoc integration
-Bundle 'fs111/pydoc.vim'
+Plug 'fs111/pydoc.vim'
 " jinja
-Bundle 'mitsuhiko/vim-jinja'
+Plug 'mitsuhiko/vim-jinja'
 
 " latex
-Bundle 'vim-latex/vim-latex'
+Plug 'vim-latex/vim-latex'
 " elixir
-Bundle 'elixir-lang/vim-elixir'
+Plug 'elixir-lang/vim-elixir'
 " lisp
-Bundle 'vim-scripts/slimv.vim'
+Plug 'vim-scripts/slimv.vim'
 " dart
-Bundle 'dart-lang/dart-vim-plugin'
+Plug 'dart-lang/dart-vim-plugin'
 " json
-Bundle 'elzr/vim-json'
+Plug 'elzr/vim-json'
 " alternate .h/.c
-Bundle 'derekwyatt/vim-fswitch'
+Plug 'derekwyatt/vim-fswitch'
 
 " completion
 if $THIS_DOMAIN != "google.com"
   if has('python') && (v:version > 703 || (v:version == 703 && has('patch584')))
-    Bundle 'Valloric/YouCompleteMe'
+    Plug 'Valloric/YouCompleteMe'
   else
-    Bundle 'ervandew/supertab'
-    "Bundle 'vim-scripts/cscope_macros.vim'
+    Plug 'ervandew/supertab'
+    "Plug 'vim-scripts/cscope_macros.vim'
   endif
 endif
 
-call vundle#end()
-filetype plugin on      " for the filetype plugin
-filetype indent on      " and indenting is sometimes good
+call plug#end()

@@ -1,6 +1,5 @@
-vim hotness using vundle
+vim hotness using vim-plug
 
-https://github.com/gmarik/vundle/blob/master/doc/vundle.txt
+https://github.com/junegunn/vim-plug/blob/master/README.md
 
-git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
-vim -u ~/.vim/bundles.vim +BundleInstall +qall
+vim -u ~/.vim/bundles.vim +PlugInstall +qall
