@@ -59,13 +59,12 @@ Plug 'elzr/vim-json'
 Plug 'derekwyatt/vim-fswitch'
 
 " completion
-if $THIS_DOMAIN != "google.com"
-  if has('python') && (v:version > 703 || (v:version == 703 && has('patch584')))
-    Plug 'Valloric/YouCompleteMe'
-  else
+if v:version >= 800
+    Plug 'natebosch/vim-lsc'
+    source ~/.vim/lsp.vim
+else
     Plug 'ervandew/supertab'
     "Plug 'vim-scripts/cscope_macros.vim'
-  endif
 endif
 
 call plug#end()
