@@ -59,12 +59,11 @@ Plug 'elzr/vim-json'
 Plug 'derekwyatt/vim-fswitch'
 
 " completion
+"Plug 'vim-scripts/cscope_macros.vim'
 if v:version >= 800
     Plug 'natebosch/vim-lsc'
     source ~/.vim/lsp.vim
-else
-    Plug 'ervandew/supertab'
-    "Plug 'vim-scripts/cscope_macros.vim'
 endif
+Plug 'ervandew/supertab'
 
 call plug#end()
