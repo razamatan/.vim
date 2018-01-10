@@ -4,8 +4,11 @@ let g:lsc_server_commands = {}
 if executable('cquery')
     let cpp_config = {
                 \'command': 'cquery --language-server --log-file=/tmp/cquery.log',
-                \'initialization_options': {'cacheDirectory': '/tmp/cquery'},
-                \}
+                \'message_hooks': {
+                    \'initialize': {
+                        \'initializationOptions': {'cacheDirectory': '/tmp/cquery'},
+                    \}
+                \}}
     let g:lsc_server_commands.c = cpp_config
     let g:lsc_server_commands.cpp = cpp_config
     let g:lsc_server_commands.objc = cpp_config
