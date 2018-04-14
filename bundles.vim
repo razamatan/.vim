@@ -50,7 +50,7 @@ Plug 'vim-latex/vim-latex'
 " elixir
 Plug 'elixir-lang/vim-elixir'
 " lisp
-Plug 'kovisoft/slimv'
+Plug 'kovisoft/slimv', { 'for': 'lisp' }
 " dart
 Plug 'dart-lang/dart-vim-plugin'
 " json
