@@ -6,7 +6,7 @@ call plug#begin('~/.vim/bundle')
 " solarized color scheme
 Plug 'altercation/vim-colors-solarized'
 " search and highlight multiple terms
-Plug 'vim-scripts/multisearch.vim'
+"Plug 'inkarkat/vim-mark'
 " gundo (undo tree)
 Plug 'sjl/gundo.vim'
 " recovery

@@ -5,9 +5,16 @@ let g:lsc_auto_map = {'defaults': v:true,
     \}
 
 let g:lsc_server_commands = {}
-if executable('pyls')
-    let g:lsc_server_commands.python = 'pyls'
-endif
+function! s:registerServer(language, path)
+    if executable(a:path)
+        let g:lsc_server_commands[a:language] = a:path
+    elseif filereadable(expand(a:path))
+        let g:lsc_server_commands[a:language] = expand(a:path)
+    endif
+endfunction
+
+call s:registerServer('python', 'pyls')
+call s:registerServer('java', '~/src/java-language-server/dist/lang_server_mac.sh')
 
 if executable('dart')
     Plug 'natebosch/vim-lsc-dart'
