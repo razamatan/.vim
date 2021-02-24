@@ -86,6 +86,9 @@ vnoremap <Tab> >
 vnoremap <S-Tab> <LT>
 map -- gg=G''
 
+" helpers
+noremap gff :e <cfile><CR>
+
 " function keys
 " <F5> buffer selection (switch)
 "nnoremap <F5> :ls<CR>:e #
