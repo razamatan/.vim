@@ -21,6 +21,14 @@ if executable('dart')
     let s:init = v:true
 endif
 
+if executable('gopls')
+    let g:lsc_server_commands['go'] = {
+        \'command': 'gopls serve',
+        \'log_level': -1,
+        \'suppress_stderr': v:true,
+        \}
+endif
+
 if !empty(g:lsc_server_commands) || exists('s:init')
     autocmd CompleteDone * silent! pclose
 endif
