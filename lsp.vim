@@ -13,7 +13,9 @@ function! s:registerServer(language, path)
     endif
 endfunction
 
-call s:registerServer('python', 'pyls')
+" https://github.com/python-lsp/python-lsp-server
+call s:registerServer('python', 'pylsp')
+" https://github.com/georgewfraser/java-language-server#vim-with-vim-lsc
 call s:registerServer('java', '~/src/java-language-server/dist/lang_server_mac.sh')
 
 if executable('dart')
