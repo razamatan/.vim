@@ -123,8 +123,6 @@ au Filetype mail set tw=0
 
 " plugin related
 nnoremap U :GundoToggle<CR>
-nnoremap <Leader>of :FSHere<CR>
-nnoremap <Leader>oF :FSSplitRight<CR>
 let g:ctrlp_map = 'p'       " make ctrl-p alt-p
 let g:ctrlp_max_files = 0     " go big
 let g:ctrlp_max_depth = 40    " or go home

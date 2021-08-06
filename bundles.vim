@@ -5,6 +5,8 @@ set nocompatible
 call plug#begin('~/.vim/bundle')
 " solarized color scheme
 Plug 'altercation/vim-colors-solarized'
+" :Dispatch, Start, Make, Copen !
+Plug 'tpope/vim-dispatch'
 " search and highlight multiple terms
 "Plug 'inkarkat/vim-mark'
 " gundo (undo tree)
@@ -19,6 +21,10 @@ Plug 'ctrlpvim/ctrlp.vim'
 Plug 'git://repo.or.cz/vcscommand.git'
 " auto ts and sw
 Plug 'tpope/vim-sleuth'
+" ctrl-a/x for dates and times
+Plug 'tpope/vim-speeddating'
+" projectionist project management
+Plug 'tpope/vim-projectionist'
 
 " more powerful . command
 Plug 'tpope/vim-repeat'
@@ -55,8 +61,6 @@ Plug 'kovisoft/slimv', { 'for': 'lisp' }
 Plug 'dart-lang/dart-vim-plugin'
 " json
 Plug 'elzr/vim-json'
-" alternate .h/.c
-Plug 'derekwyatt/vim-fswitch'
 
 " completion
 "Plug 'vim-scripts/cscope_macros.vim'
