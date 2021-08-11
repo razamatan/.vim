@@ -73,8 +73,8 @@ nnoremap <C-Right> :wincmd l<CR>
 nnoremap <C-Left> :wincmd h<CR>
 
 " buffer movement
-nnoremap <C-P> :bp<CR>
-nnoremap <C-N> :bn<CR>
+nnoremap <C-K> :bp<CR>
+nnoremap <C-J> :bn<CR>
 
 " line indenting
 set cinkeys-=0#         " prevent # from autoflushing left
@@ -123,7 +123,6 @@ au Filetype mail set tw=0
 
 " plugin related
 nnoremap U :GundoToggle<CR>
-let g:ctrlp_map = 'p'       " make ctrl-p alt-p
 let g:ctrlp_max_files = 0     " go big
 let g:ctrlp_max_depth = 40    " or go home
 let bexec_rehighlight=1
