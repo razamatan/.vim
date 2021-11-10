@@ -29,6 +29,7 @@ set ic scs                 " case-insentive, smart case search
 set modeline
 set modelines=5
 set nobackup
+set directory=~/.vim/tmp//,/tmp/jin-vim//
 
 " completion
 set path+=**            " cheap way to use :find
