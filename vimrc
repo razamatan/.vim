@@ -81,8 +81,8 @@ nnoremap <C-J> :bn<CR>
 set cinkeys-=0#         " prevent # from autoflushing left
 "set t_kB=[Z           " hit ctrl-v and S-Tab
 inoremap <S-Tab> <C-O><LT><LT>
-nnoremap <Tab> >>
 nnoremap <S-Tab> <LT><LT>
+"nnoremap <Tab> >>       " this kills C-I jumps
 vnoremap <Tab> >
 vnoremap <S-Tab> <LT>
 map -- gg=G''
