@@ -13,8 +13,8 @@ Plug 'tpope/vim-dispatch'
 Plug 'sjl/gundo.vim'
 " recovery
 Plug 'chrisbra/Recover.vim'
-" most recently used files
-Plug 'vim-scripts/mru.vim'
+" most recently used files (replaced by ctrlp)
+"Plug 'yegappan/mru.vim'
 " ctrl-p, fuzzy file open
 Plug 'ctrlpvim/ctrlp.vim'
 " vcs integration
@@ -29,25 +29,25 @@ Plug 'tpope/vim-projectionist'
 " more powerful . command
 Plug 'tpope/vim-repeat'
 " more powerful % command
-Plug 'vim-scripts/matchit.zip'
+Plug 'chrisbra/matchit'
 " html/xml mappings, enhances vim-surround
 Plug 'tpope/vim-ragtag'
 " modify surrounding syntax
 Plug 'tpope/vim-surround'
 
 " check syntax of scripts
-Plug 'vim-scripts/checksyntax-B'
+Plug 'tomtom/checksyntax_vim'
 " buffer execution
-Plug 'vim-scripts/Bexec'
+Plug 'fboender/bexec'
 " align statements
 Plug 'vim-scripts/Align'
 
 " enhanced python
-Plug 'vim-scripts/python.vim--Vasiliev'
+"Plug 'vim-scripts/python.vim--Vasiliev'
+" pydoc integration
+"Plug 'fs111/pydoc.vim'
 " extend % for python
 Plug 'vim-scripts/python_match.vim'
-" pydoc integration
-Plug 'fs111/pydoc.vim'
 " jinja
 Plug 'mitsuhiko/vim-jinja'
 
