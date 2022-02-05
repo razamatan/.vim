@@ -59,6 +59,8 @@ Plug 'elixir-lang/vim-elixir'
 Plug 'kovisoft/slimv', { 'for': 'lisp' }
 " dart
 Plug 'dart-lang/dart-vim-plugin'
+" rust
+Plug 'rust-lang/rust.vim'
 " json
 Plug 'elzr/vim-json'
 

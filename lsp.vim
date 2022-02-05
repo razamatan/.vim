@@ -13,6 +13,7 @@ function! s:registerServer(language, path, ...)
     endif
 endfunction
 
+call s:registerServer('rust', 'rust-analyzer')
 " https://github.com/python-lsp/python-lsp-server
 call s:registerServer('python', 'pylsp')
 " https://github.com/georgewfraser/java-language-server#vim-with-vim-lsc
