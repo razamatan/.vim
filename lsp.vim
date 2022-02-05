@@ -5,11 +5,11 @@ let g:lsc_auto_map = {'defaults': v:true,
     \}
 
 let g:lsc_server_commands = {}
-function! s:registerServer(language, path)
+function! s:registerServer(language, path, ...)
     if executable(a:path)
-        let g:lsc_server_commands[a:language] = a:path
+        let g:lsc_server_commands[a:language] = join([a:path] + a:000)
     elseif filereadable(expand(a:path))
-        let g:lsc_server_commands[a:language] = expand(a:path)
+        let g:lsc_server_commands[a:language] = join([expand(a:path)] + a:000)
     endif
 endfunction
 
