@@ -106,8 +106,9 @@ set pastetoggle=<F9>
 nnoremap <F12> gqap
 
 " macros
-nnoremap <silent> <Leader>ml :call AppendModeline()<CR>
+nnoremap <Leader>bd :bp<CR>:bd #<CR>
 nnoremap <Leader>date :r!date<CR>
+nnoremap <silent> <Leader>ml :call AppendModeline()<CR>
 nnoremap <Leader>tag  :!tagup<CR>
 nnoremap <Leader>make :w<CR>:!makeup<CR>
 
