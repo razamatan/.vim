@@ -63,6 +63,8 @@ Plug 'dart-lang/dart-vim-plugin'
 Plug 'rust-lang/rust.vim'
 " json
 Plug 'elzr/vim-json'
+" terraform
+Plug 'hashivim/vim-terraform'
 
 " completion
 "Plug 'vim-scripts/cscope_macros.vim'
