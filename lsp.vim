@@ -13,6 +13,17 @@ function! s:registerServer(language, path, ...)
     endif
 endfunction
 
+if executable('clangd')
+    let g:lsc_server_commands['cpp'] = {
+        \'command': 'clangd --background-index',
+        \'suppress_stderr': v:true,
+        \}
+    let g:lsc_server_commands['c'] = {
+        \'command': 'clangd --background-index',
+        \'suppress_stderr': v:true,
+        \}
+endif
+
 call s:registerServer('rust', 'rust-analyzer')
 " https://github.com/python-lsp/python-lsp-server
 call s:registerServer('python', 'pylsp')

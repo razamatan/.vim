@@ -47,24 +47,23 @@ Plug 'vim-scripts/Align'
 " pydoc integration
 "Plug 'fs111/pydoc.vim'
 " extend % for python
-Plug 'vim-scripts/python_match.vim'
+Plug 'vim-scripts/python_match.vim', { 'for': 'python' }
 " jinja
 Plug 'mitsuhiko/vim-jinja'
-
 " latex
 Plug 'vim-latex/vim-latex'
 " elixir
-Plug 'elixir-lang/vim-elixir'
+Plug 'elixir-lang/vim-elixir', { 'for': 'elixir' }
 " lisp
 Plug 'kovisoft/slimv', { 'for': 'lisp' }
 " dart
-Plug 'dart-lang/dart-vim-plugin'
+Plug 'dart-lang/dart-vim-plugin', { 'for': 'dart' }
 " rust
-Plug 'rust-lang/rust.vim'
+Plug 'rust-lang/rust.vim', { 'for': 'rust' }
 " json
-Plug 'elzr/vim-json'
+Plug 'elzr/vim-json', { 'for': 'json' }
 " terraform
-Plug 'hashivim/vim-terraform'
+Plug 'hashivim/vim-terraform', { 'for': 'terraform' }
 
 " completion
 "Plug 'vim-scripts/cscope_macros.vim'
