@@ -129,7 +129,7 @@ let g:ctrlp_max_files = 0     " go big
 let g:ctrlp_max_depth = 40    " or go home
 let bexec_rehighlight=1
 let python_highlight_all=1
-let g:netrw_liststyle=3       " tree
+"let g:netrw_liststyle=3       " tree
 "let g:netrw_browse_split=4    " 0 same window, 1 horiz, 2 vert, 3 new tab, 4 previous window
 "let g:netrw_preview=1         " 0 horizontal split, 1 vertical split
 
