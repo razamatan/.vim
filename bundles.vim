@@ -9,8 +9,8 @@ Plug 'altercation/vim-colors-solarized'
 Plug 'tpope/vim-dispatch'
 " search and highlight multiple terms
 "Plug 'inkarkat/vim-mark'
-" gundo (undo tree)
-Plug 'sjl/gundo.vim'
+" more powerful undo
+Plug 'mbbill/undotree'
 " recovery
 Plug 'chrisbra/Recover.vim'
 " most recently used files (replaced by ctrlp)

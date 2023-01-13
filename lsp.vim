@@ -27,6 +27,7 @@ endif
 call s:registerServer('rust', 'rust-analyzer')
 " https://github.com/python-lsp/python-lsp-server
 call s:registerServer('python', 'pylsp')
+call s:registerServer('lua', 'lua-language-server')
 " https://github.com/georgewfraser/java-language-server#vim-with-vim-lsc
 call s:registerServer('java', '~/src/java-language-server/dist/lang_server_mac.sh')
 

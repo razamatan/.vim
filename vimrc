@@ -124,7 +124,7 @@ endfunction
 au Filetype mail set tw=0
 
 " plugin related
-nnoremap U :GundoToggle<CR>
+nnoremap U :UndotreeToggle<CR>
 let g:ctrlp_max_files = 0     " go big
 let g:ctrlp_max_depth = 40    " or go home
 let bexec_rehighlight=1
