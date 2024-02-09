@@ -28,19 +28,26 @@ set incsearch              " incremental search
 set ic scs                 " case-insentive, smart case search
 set modeline
 set modelines=5
+
+" vim temp files
 set nobackup
-set directory=~/.vim/tmp//,/tmp/jin-vim//
+if !isdirectory('~/.cache/vim/tmp/')
+  call system('mkdir -p ~/.cache/vim/tmp/')
+endif
+set directory="~/.cache/.vim/tmp//"
+if has('persistent_undo')
+  let path = expand('~/.cache/vim/undo/')
+  if !isdirectory(path)
+    call system('mkdir -p ' . path)
+  endif
+  let &undodir = path
+  set undofile
+endif
 
 " completion
 set path+=**            " cheap way to use :find
-if has('python') && (v:version > 703 || (v:version == 703 && has('patch584')))
-  " we're more than likely using ycm
-  let g:ycm_autoclose_preview_window_after_insertion = 1
-endif
-if filereadable(expand('~/.vim/bundle/supertab/plugin/supertab.vim'))
-  set completeopt=menuone,longest
-  let g:SuperTabDefaultCompletionType = 'context'
-endif
+set completeopt=menuone,longest
+let g:SuperTabDefaultCompletionType = 'context'
 
 set shell=/bin/bash
 set grepprg=grep\ -nH\ $*
